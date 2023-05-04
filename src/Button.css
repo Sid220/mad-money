@@ -1,0 +1,62 @@
+.Button-container {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.Button-button {
+    background: red;
+    border-radius: 50%;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(10px 10px #0000005e);
+}
+
+.Button-button-button {
+    outline: 0;
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.pressed {
+    background: #C40000FF;
+    transform: translateY(2px);
+    filter: drop-shadow(8px 8px rgba(0, 0, 0, 0.53));
+
+}
+
+.Button-text {
+    background: white;
+    overflow-wrap: anywhere;
+    text-align: center;
+    width: 80%;
+    filter: drop-shadow(0 0 3px #F0F0F0);
+}
+
+.Button-video {
+    display: none;
+}
+
+.playing {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background: black;
+    object-fit: cover;
+}

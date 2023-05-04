@@ -1,0 +1,13 @@
+.App-Button-container {
+    --width-per-col: 12.5vw;
+
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    place-items: center;
+
+    background: #c6c6c6;
+
+    grid-template-columns: var(--width-per-col) var(--width-per-col) var(--width-per-col) var(--width-per-col) var(--width-per-col) var(--width-per-col) var(--width-per-col) var(--width-per-col);
+}
