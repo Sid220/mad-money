@@ -1,4 +1,4 @@
-import React, {ButtonHTMLAttributes} from 'react';
+import React from 'react';
 import './App.css';
 import Button from './Button'
 import Sound from "./Sound";
@@ -39,17 +39,17 @@ let sounds = [
     new Sound("SUB DIVE", "n", "sub_dive.mp3"),
 ]
 
-const rows: any[] = [];
+const buttons: any[] = [];
 for (let i = 0; i < sounds.length; i++) {
     // note: we are adding a key prop here to allow react to uniquely identify each
     // element in this array. see: https://reactjs.org/docs/lists-and-keys.html
-    rows.push(<Button key={i} sound={sounds[i]} />);
+    buttons.push(<Button key={i} sound={sounds[i]} />);
 }
 function App() {
     return (
         <div className="App">
             <div className="App-Button-container">
-                {rows}
+                {buttons}
             </div>
         </div>
     );
