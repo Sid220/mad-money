@@ -6,8 +6,21 @@
     display: grid;
     align-items: center;
     place-items: center;
-
-    background: #c6c6c6;
-
     grid-template-columns: var(--width-per-col) var(--width-per-col) var(--width-per-col) var(--width-per-col) var(--width-per-col) var(--width-per-col) var(--width-per-col) var(--width-per-col);
+}
+
+@media (max-width: 440px) {
+    .App-Button-container {
+        grid-template-columns: 50vw 50vw !important;
+    }
+}
+
+@media (max-width: 780px) {
+    .App-Button-container {
+        grid-template-columns: 33vw 33vw 33vw;
+    }
+}
+
+body {
+    background: #c6c6c6;
 }
